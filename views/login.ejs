@@ -1,0 +1,44 @@
+<%- include('./partials/head') %>
+<body>
+<%- include('./partials/header') %>
+  <br>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-10 d-flex justify-content-center">
+            <body class="text-center" data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+                <main class="form-signin w-100 m-auto">
+                  <form action="/users/login" method="POST">
+                    <img class="mb-4" src="/images/logo.png" alt="" width="150" height="150">
+                    <h1 class="h3 mb-3 fw-normal">Allá vamos</h1>
+                    <div class="form-floating">
+                      <input type="email" class="form-control <%= locals.errors && errors.email ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com"  name="email">
+                      <label for="floatingInput"style="font-size: 20px">Email</label>
+                      <% if (locals.errors && errors.email) { %>
+                        <%= errors.email.msg %>
+                      <% } %>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+                      <label for="floatingPassword" style="font-size: 20px">Password</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Recordame
+                      </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" style="background-color: #ff914c;" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3 text-muted">© 2022–2023</p>
+                  </form>
+                </main>
+                <div id="torrent-scanner-popup" style="display: none;"></div>
+              </body>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    
+     

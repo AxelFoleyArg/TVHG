@@ -1,0 +1,93 @@
+<%- include('./partials/head') %>
+<body>
+<%- include('./partials/header') %>
+  <br>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-10 d-flex justify-content-center">
+            <body class="text-center" data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+                <main class="form-signin w-100 m-auto">
+                  <form action="/users/store" method="POST" enctype="multipart/form-data">
+                    <img class="mb-4" src="/images/logo.png" alt="" width="150" height="150">
+                    <h1 class="h3 mb-3 fw-normal">Registrate</h1>
+                    <br>
+                    <div class="form-floating">
+                      <input type="email" class="form-control <%= locals.errors && errors.email ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com"  name="email" value="<%= locals.oldData ? oldData.email : null %>">
+                      <label for="floatingInput"style="font-size: 20px">Email</label>
+                      <% if (locals.errors && errors.email) { %>
+                       <span class="msg"> <%= errors.email.msg %> </span>
+                      <% } %>
+                    </div>
+                    <br>
+                    <div class="form-floating"> 
+                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com" name="name" value="<%= locals.oldData ? oldData.name : null %>">
+                        <label for="floatingInput" style="font-size: 20px">Nombre</label>
+                        <% if (locals.errors && errors.name) { %>
+                          <span class="msg"><%= errors.name.msg %> </span>
+                        <% } %>
+                      </div>
+                      <br>
+                      <div class="form-floating">
+                        <input type="text" class="form-control <%= locals.errors && errors.surname ? "is-invalid" : null %>" id="floatingInput" placeholder="name@example.com" name="surname" value="<%= locals.oldData ? oldData.surname : null %>">
+                        <label for="floatingInput" style="font-size: 20px">Apellido</label>
+                        <% if (locals.errors && errors.surname) { %>
+                          <span class="msg"><%= errors.surname.msg %> </span>
+                        <% } %>
+                      </div>
+                      <br>
+                      <div class="form-floating">
+                        <input type="text" class="form-control <%= locals.errors && errors.steam ? "is-invalid" : null %>" id="floatingInput" placeholder="name@example.com" name="steam" value="<%= locals.oldData ? oldData.steam : null %>">
+                        <label for="floatingInput" style="font-size: 20px">Steam User</label>
+                        <% if (locals.errors && errors.steam) { %>
+                          <span class="msg"><%= errors.steam.msg %></span>
+                        <% } %>
+                      </div>
+                    <br>
+                    <div class="form-floating">
+                      <input type="password" class="form-control <%= locals.errors && errors.password ? "is-invalid" : null %>" id="floatingPassword" placeholder="Password" name="password">
+                      <label for="floatingPassword" style="font-size: 20px">Password</label>
+                      <% if (locals.errors && errors.password) { %>
+                        <span class="msg"><%= errors.password.msg %> </span>
+                      <% } %>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="confirm">
+                        <label for="floatingPassword" style="font-size: 20px;">Confirm Password</label>
+                        <% if (locals.errors && errors.confirm) { %>
+                          <span class="msg"> <%= errors.confirm.msg %> </span>
+                        <% } %>
+                      </div>
+                      <br>
+                      <div>
+                            <input type="file" name="avatar" id="avatar" accept=".png,.jpeg,.jpg,.gif" value="<%= locals.oldData ? oldData.avatar : null %>" placeholder="Imagen de Perfil">
+                            <br>
+                            <% if (locals.errors && errors.avatar) { %>
+                              <span class="msg"> <%= errors.avatar.msg %> </span>
+                            <% } %>
+                      </div>
+                      <br>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color: #ff914c;">Registrarme</button>
+                    <p class="mt-5 mb-3 text-muted">© 2022–2023</p>
+                  </form>
+                </main>
+                <div id="torrent-scanner-popup" style="display: none;"></div>
+              </body>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    
+     
+     
+
+
+
+
+
+
+
+        

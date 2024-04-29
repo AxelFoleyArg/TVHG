@@ -1,0 +1,208 @@
+<%- include('./partials/head') %>
+<body>
+<%- include('./partials/header') %>
+  <br>
+  <div class="ranking-title">
+    <h1> Torneo Recategorización</h1>
+  </div>
+  <section class="leaderboard-section" style="margin-bottom: 15px; padding: 10px;">
+    <div class="tournament-details" style="display: flex; flex-direction: column;">
+      <div class="container">
+        <h2>Información de utilidad</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none;">
+                 <h3 style="font-size: 25px; text-decoration: none; color: #ff914c;">Modalidad</h3>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <p style="text-align: justify;">El presente torneo tendrá el formato de "Liguilla", donde todos los jugadores se enfrentarán entre ellos al menos una vez. Obtendran un punto por cada victoria.</p>
+                <p style="text-align: justify;">Los dos jugadores que obtengan mas puntos al finalizar al ronda regular, jugarán al mejor de tres partidas por el título y la categoria de DIOS. El perdedor de esa final obtendrá la categoria de SemiDios de Élite.</p>
+                <p style="text-align: justify;">Los jugadores con clasificación 3 y 4 se batirán en duelo, al mejor de tres partidas, por la categoría de SemiDios y el perdedor ostentará la categoría de Marmota de Élite.</p>
+                <p style="text-align: justify;">Todos el resto de los jugadores será categorizado como "Marmotas de Pelo Corto".</p>
+                <p style="text-align: justify;">Abajo podrán encontrar el fixture completo de partidos, y ante la postergación indebida o reiterado bicicleteo, La Flamante Comisión podra decretar el WO de uno u ambos jugadores para dicha fecha.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;">
+                  <h3 style="font-size: 25px; text-decoration: none; color: #ff914c;">Detalles</h3>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Mapa:</span> Green Arabia<br>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Size:</span> Pequeño (2 jugadores)<br>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Civ Pick:</span> No<br>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Points:</span>
+                <ul>
+                  <li>80 FP Winner</li>
+                  <li>40 FP Runner Up</li>
+                  <li>20 FP SemiFinals</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Liguilla Regular</th>
+                <th scope="col">PJ</th>
+                <th scope="col">PG</th>
+                <th scope="col">PP</th>
+                <th scope="col">PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Korova</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Chicho</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Especialista</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Napoleon</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Garba</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Rulothar</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row flex-column flex-md-row">
+          <div class="col">
+            <div class="row flex-column flex-md-row">
+              <div class="col-md-8">
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>Fecha 1 </strong></li>
+                  <li class="list-group-item">Garba vs <strong>Korova</strong></li>
+                  <li class="list-group-item"><strong>Chicho</strong> vs Especialista </li>
+                  <li class="list-group-item">Rulothar vs <stong>Napoleon</stong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col">
+        <div class="row flex-column flex-md-row">
+          <div class="col">
+            <div class="row flex-column flex-md-row">
+              <div class="col-md-8">
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>Fecha 2 </strong></li>
+                  <li class="list-group-item">Napoleon vs <strong>Especialista</strong></li>
+                  <li class="list-group-item"><strong>Garba</strong> vs Chicho <a href=https://youtu.be/K3FL6tDmpmE><i class="fa-brands fa-youtube"></i></a></li>
+                  <li class="list-group-item">Korova vs Rulothar </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>
+      <div class="col">
+        <div class="row flex-column flex-md-row">
+          <div class="col">
+            <div class="row flex-column flex-md-row">
+              <div class="col-md-8">
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>Fecha 3 </strong></li>
+                  <li class="list-group-item">Korova vs Chicho </li>
+                  <li class="list-group-item">Garba vs Napoleon </li>
+                  <li class="list-group-item">Rulothar vs Especialista </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>
+      <div class="col">
+        <div class="row flex-column flex-md-row">
+          <div class="col">
+            <div class="row flex-column flex-md-row">
+              <div class="col-md-8">
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>Fecha 4 </strong></li>
+                  <li class="list-group-item">Chicho vs Rulothar </li>
+                  <li class="list-group-item">Garba vs Especialista </li>
+                  <li class="list-group-item">Korova vs Napoleon </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>
+      <div class="col">
+        <div class="row flex-column flex-md-row">
+          <div class="col">
+            <div class="row flex-column flex-md-row">
+              <div class="col-md-8">
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>Fecha 5 </strong></li>
+                  <li class="list-group-item">Napoleon vs Chicho </li>
+                  <li class="list-group-item">Korova vs Especialista </li>
+                  <li class="list-group-item">Rulothar vs Garba </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>
+    </div>
+      <%- include('./partials/footer') %>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      </body>
+      </html>

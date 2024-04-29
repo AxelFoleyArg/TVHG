@@ -1,0 +1,81 @@
+<%- include('./partials/head') %>
+<body>
+<%- include('./partials/header') %>
+  <br>
+  <section class="bg-light">
+    <form action="/users/profile-edit/<%= user.id %>/?_method=put" method="POST" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div class="card card-style1 border-0">
+                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                              <img src="/images/avatars/<%= user.avatar %>" alt="..." style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                                <div class="form-floating">
+                                    <input type="file" name="avatar" id="avatar" accept=".png,.jpeg,.jpg,.gif" value="<%= user.avatar %>">
+                                    <label for="avatar" class="font-white"></label>
+                                    <% if (locals.errors && errors.avatar) { %>
+                                      <%= errors.avatar.msg %>
+                                    <% } %>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 px-xl-10">
+                                <ul class="list-unstyled mb-1-9">
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26  me-2 font-weight-600" style="color: #ff914c">Nombre:</span> <div class="form-floating"> 
+                                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com" name="name" value="<%= user.name %>">
+                                        <label for="floatingInput" style="font-size: 20px"></label>
+                                        <% if (locals.errors && errors.name) { %>
+                                          <%= errors.name.msg %>
+                                        <% } %>
+                                      </div></li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26  me-2 font-weight-600" style="color: #ff914c">Apellido:</span> <div class="form-floating"> 
+                                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com" name="surname" value="<%= user.surname %>">
+                                        <label for="floatingInput" style="font-size: 20px"></label>
+                                        <% if (locals.errors && errors.name) { %>
+                                          <%= errors.name.msg %>
+                                        <% } %>
+                                      </div></li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26  me-2 font-weight-600" style="color: #ff914c">Steam User:</span> <div class="form-floating"> 
+                                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com" name="steam" value="<%= user.steam %>">
+                                        <label for="floatingInput" style="font-size: 20px"></label>
+                                        <% if (locals.errors && errors.name) { %>
+                                          <%= errors.name.msg %>
+                                        <% } %>
+                                      </div> </li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26  me-2 font-weight-600" style="color: #ff914c">Civiliazación Preferida</span> <div class="form-floating"> 
+                                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com" name="civ" value="<%= user.civ %>">
+                                        <label for="floatingInput" style="font-size: 20px"></label>
+                                        <% if (locals.errors && errors.name) { %>
+                                          <%= errors.name.msg %>
+                                        <% } %>
+                                      </div> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div>
+                    <span class="section-title mb-3 mb-sm-4" style="color: #ff914c">La Historia de mi Pueblo</span>
+                    <div class="form-floating"> 
+                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" placeholder="name@example.com" name="description" value="<%= user.description %>">
+                        <label for="floatingInput" style="font-size: 20px"></label>
+                        <% if (locals.errors && errors.name) { %>
+                          <%= errors.name.msg %>
+                        <% } %>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <button class="w-10 btn btn-lg btn-primary" type="submit";">Guardar Cambios</button>
+    </div>
+</form>
+</section>
+<%- include('./partials/footer') %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

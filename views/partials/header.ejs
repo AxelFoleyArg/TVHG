@@ -1,0 +1,41 @@
+<header class="p-3" style="background-color: #ff914c;">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff914c;">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-4 home-btn" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/users">Jugadores</a>
+                <a class="nav-link active" aria-current="page" href="/users/ranking">Ranking</a>
+                <a class="nav-link active" aria-current="page" href="/events">Eventos</a>
+                <a class="nav-link active" aria-current="page" href="/leaderboard">Leaderboard</a>
+                <% if (locals.isLogged && locals.userLogged.admin == 1) { %>
+                  <a class="nav-link active" aria-current="page" href="/news/create/">Crear Noticia</a>
+                  <a class="nav-link active" aria-current="page" href="/articles/create/">Crear Articulo</a>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="text-end">
+        <% if (!locals.isLogged)  { %>
+          <!-- Botones de Login y Registrarse para dispositivos móviles -->
+          <a href="/users/login" class="btn btn-outline-light btn-sm me-2 d-md-none d-lg-inline">Login</a>
+          <a href="/users/register" class="btn btn-outline-light btn-sm me-2 d-md-none d-lg-inline">Registrarse</a>
+         
+        <% } else { %>
+          <!-- Botones de Logout y Ver Perfil para dispositivos móviles -->
+          <a href="/users/logout" class="btn btn-outline-light btn-sm me-2 d-md-none d-lg-inline">Logout</a>
+          <a href="/users/profile" class="btn btn-outline-light btn-sm me-2 d-md-none d-lg-inline">Ver Perfil</a>
+         
+        <% } %> 
+      </div>
+    </div>
+  </div>
+</header>

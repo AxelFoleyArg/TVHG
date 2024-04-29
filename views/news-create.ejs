@@ -1,0 +1,78 @@
+<%- include('./partials/head') %>
+<body>
+<%- include('./partials/header') %>
+  <br>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-10 d-flex justify-content-center">
+            <body class="text-center" data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+                <main class="form-signin w-100 m-auto">
+                  <form action="/news/store" method="POST" enctype="multipart/form-data">
+                    <img class="mb-4" src="/images/logo.png" alt="" width="150" height="150">
+                    <h1 class="h3 mb-3 fw-normal">Crear una Noticia</h1>
+                    <br>
+                    <div class="form-floating">
+                      <input type="text" class="form-control <%= locals.errors && errors.email ? "is-invalid" : null %> " id="floatingInput"  name="author" value="">
+                      <label for="floatingInput"style="font-size: 20px">Autor</label>
+                      <% if (locals.errors && errors.author) { %>
+                       <span class="msg"> <%= errors.author.msg %> </span>
+                      <% } %>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                      <input type="text" class="form-control <%= locals.errors && errors.email ? "is-invalid" : null %> " id="floatingInput"  name="title" value="">
+                      <label for="floatingInput"style="font-size: 20px">Titulo</label>
+                      <% if (locals.errors && errors.title) { %>
+                       <span class="msg"> <%= errors.title.msg %> </span>
+                      <% } %>
+                    </div>
+                    <br>
+                    <div class="form-floating"> 
+                        <input type="text" class="form-control <%= locals.errors && errors.name ? "is-invalid" : null %> " id="floatingInput" name="synopsis" value="">
+                        <label for="floatingInput" style="font-size: 20px">Sinopsis</label>
+                        <% if (locals.errors && errors.synopsis) { %>
+                          <span class="msg"><%= errors.synopsis.msg %> </span>
+                        <% } %>
+                      </div>
+                      <br>
+                      <div class="form-floating">
+                        <input type="text" class="form-control <%= locals.errors && errors.surname ? "is-invalid" : null %>" id="floatingInput" name="content" value="">
+                        <label for="floatingInput" style="font-size: 20px">Contenido</label>
+                        <% if (locals.errors && errors.content) { %>
+                          <span class="msg"><%= errors.content.msg %> </span>
+                        <% } %>
+                      </div>
+                      <br>
+                      <br>
+                      <div>
+                            <input type="file" name="avatar" id="avatar" accept=".png,.jpeg,.jpg,.gif" value="" placeholder="Imagen de Perfil">
+                            <br>
+                            <% if (locals.errors && errors.image) { %>
+                              <span class="msg"> <%= errors.image.msg %> </span>
+                            <% } %>
+                      </div>
+                      <br>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color: #ff914c;">Crear</button>
+                    <p class="mt-5 mb-3 text-muted">© 2022–2023</p>
+                  </form>
+                </main>
+                <div id="torrent-scanner-popup" style="display: none;"></div>
+              </body>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    
+     
+     
+
+
+
+
+
+
+
+        
