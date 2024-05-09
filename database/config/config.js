@@ -9,18 +9,18 @@ module.exports = {
   },
   "test": {
     "username": process.env.DB_USERNAME || "root",
-    "password": process.env.DB_PASSWORD || "sdv50mxbsBiYYrhfNm07",
-    "port": process.env.DB_PORT || 6238,
+    "password": process.env.DB_PASSWORD || "NRfqjNPTVkCJWMFjIrspDVfayIqyquGE",
+    "port": process.env.DB_PORT || 33264,
     "database": process.env.DB_DATABASE || "railway",
-    "host": process.env.DB_HOST || "containers-us-west-178.railway.app",
+    "host": process.env.DB_HOST || "roundhouse.proxy.rlwy.net",
     "dialect": "mysql"
   },
   "production": {
     "username": process.env.DB_USERNAME || "root",
-    "password": process.env.DB_PASSWORD || "sdv50mxbsBiYYrhfNm07",
-    "port": process.env.DB_PORT || 6238,
+    "password": process.env.DB_PASSWORD || "NRfqjNPTVkCJWMFjIrspDVfayIqyquGE",
+    "port": process.env.DB_PORT || 33264,
     "database": process.env.DB_DATABASE || "railway",
-    "host": process.env.DB_HOST || "containers-us-west-178.railway.app",
+    "host": process.env.DB_HOST || "roundhouse.proxy.rlwy.net",
     "dialect": "mysql"
   }
 }
