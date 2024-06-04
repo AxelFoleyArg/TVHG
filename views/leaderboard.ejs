@@ -3,7 +3,7 @@
 <%- include('./partials/header') %>
   <br>
   <div class="ranking-title">
-    <h1> Torneo Recategorización</h1>
+    <h1> Copa TVHG </h1>
   </div>
   <section class="leaderboard-section" style="margin-bottom: 15px; padding: 10px;">
     <div class="tournament-details" style="display: flex; flex-direction: column;">
@@ -20,11 +20,15 @@
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
-                <p style="text-align: justify;">El presente torneo tendrá el formato de "Liguilla", donde todos los jugadores se enfrentarán entre ellos al menos una vez. Obtendran un punto por cada victoria.</p>
-                <p style="text-align: justify;">Los dos jugadores que obtengan mas puntos al finalizar al ronda regular, jugarán al mejor de tres partidas por el título y la categoria de DIOS. El perdedor de esa final obtendrá la categoria de SemiDios de Élite.</p>
-                <p style="text-align: justify;">Los jugadores con clasificación 3 y 4 se batirán en duelo, al mejor de tres partidas, por la categoría de SemiDios y el perdedor ostentará la categoría de Marmota de Élite.</p>
-                <p style="text-align: justify;">Todos el resto de los jugadores será categorizado como "Marmotas de Pelo Corto".</p>
-                <p style="text-align: justify;">Abajo podrán encontrar el fixture completo de partidos, y ante la postergación indebida o reiterado bicicleteo, La Flamante Comisión podra decretar el WO de uno u ambos jugadores para dicha fecha.</p>
+                <p style="text-align: justify;">El presente torneo se compondrá de dos fases. La primera será de tipo grupos, siendo 4 de ellos, conformados por 4 jugadores cada uno. Los dos jugadores que obtengan mas puntos en cada grupo avanzarán a la fase de eliminación directa.</p>
+                <p style="text-align: justify;">Durante la fase de grupos, cada jugador se enfrentará al resto de los integrantes de su grupo en dos oportunidades, una en calidad de local y otra en calidad de visitante. Quien oficie en calidad de local eligirá el mapa, dentro del pool seleccionado por la COMISIÓN.</p>
+                <p style="text-align: justify;">Si un jugador gana ambas partidas del duelo, obtendrá 3 puntos, si cada jugador gana una partida se repartirán un punto por jugador. No esta de más señalar que no recibirá punto alguno quien pierda ambas partidas.</p>
+                <p style="text-align: justify;">Los dos jugadores con mayor puntuación al finalizar los duelos de la zona de grupos avanzarán a la fase de eliminación directa. En caso de que dos jugadores tengán la misma cantidad de puntos, se jugará una partida adicional entre ellos en la mística isla de Socotra.</p>
+                <p style="text-align: justify;">Durante la fase de eliminación directa, se realizará un nuevo sorteo entre los primeros y los segundos de cada grupo para determinar la composición de los duelos.</p>
+                <p style="text-align: justify;">Estos duelos serán al mejor de tres (BO3), oficiando un jugador de local, oportunidad en la que podra pickear su mapa y luego de visitante, oportunidad en la que tendrá que someterse al mapa elegido por su riva. En caso de empate, en esta ocasión se definirá en el azaroso mapa de Megarandom.</p>
+                <p style="text-align: justify;">En el acápipe siguiente se apreciará el pool de mapas y otros detalles de interés.</p>
+                <p style="text-align: justify;">Una cosita más. En caso que la diferencia de ELOS sea mayor a 100, en jugador mas bajo podrá contar con la asistencia de un coach durante la partida</p>
+                <p style="text-align: justify;">Adelante y suerte.</p>
               </div>
             </div>
           </div>
@@ -38,14 +42,17 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body">
-                <span class="font-weight-light font-weight-bold text-decoration-underline">Mapa:</span> Green Arabia<br>
-                <span class="font-weight-light font-weight-bold text-decoration-underline">Size:</span> Pequeño (2 jugadores)<br>
-                <span class="font-weight-light font-weight-bold text-decoration-underline">Civ Pick:</span> No<br>
-                <span class="font-weight-light font-weight-bold text-decoration-underline">Points:</span>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Nombre de la sala:</span> TVHG<br>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Size:</span> Pequeñito (2 jugadores).<br>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Civ Pick:</span> Si, superada la instancia de banneo.<br>
+                <span class="font-weight-light font-weight-bold text-decoration-underline">Pool de mapas:</span>
                 <ul>
-                  <li>80 FP Winner</li>
-                  <li>40 FP Runner Up</li>
-                  <li>20 FP SemiFinals</li>
+                  <li> Cerrados: Arena y Guaridas</li>
+                  <li> Abiertos: Arabia y Atacama</li>
+                  <li> Nomadas: Nomada de tierra y Claro africano</li>
+                  <li> Mixtos: continental y mediterràneo</li>
+                  <li> Nomadas: Nomada de tierra y Claro africano</li>
+                  <li> Extras: Lago fantasma y Fiebre del oro</li>
                 </ul>
               </div>
             </div>
@@ -59,7 +66,7 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">Liguilla Regular</th>
+                <th scope="col" >Grupo A</th>
                 <th scope="col">PJ</th>
                 <th scope="col">PG</th>
                 <th scope="col">PP</th>
@@ -68,137 +75,160 @@
             </thead>
             <tbody>
               <tr>
-                <td>Korova</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
               </tr>
               <tr>
-                <td>Chicho</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
               </tr>
               <tr>
-                <td>Especialista</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
               </tr>
               <tr>
-                <td>Napoleon</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Grupo B</th>
+                <th scope="col">PJ</th>
+                <th scope="col">PG</th>
+                <th scope="col">PP</th>
+                <th scope="col">PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
               </tr>
               <tr>
-                <td>Garba</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
               </tr>
               <tr>
-                <td>Rulothar</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Grupo C</th>
+                <th scope="col">PJ</th>
+                <th scope="col">PG</th>
+                <th scope="col">PP</th>
+                <th scope="col">PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Grupo D</th>
+                <th scope="col">PJ</th>
+                <th scope="col">PG</th>
+                <th scope="col">PP</th>
+                <th scope="col">PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
+                <td style="font-size: 30px; text-decoration: none; color: grey;">0</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <div class="col">
-        <div class="row flex-column flex-md-row">
-          <div class="col">
-            <div class="row flex-column flex-md-row">
-              <div class="col-md-8">
-                <ul class="list-group">
-                  <li class="list-group-item"><strong>Fecha 1 </strong></li>
-                  <li class="list-group-item">Garba vs <strong>Korova</strong></li>
-                  <li class="list-group-item"><strong>Chicho</strong> vs Especialista </li>
-                  <li class="list-group-item">Rulothar vs <stong>Napoleon</stong></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="col">
-        <div class="row flex-column flex-md-row">
-          <div class="col">
-            <div class="row flex-column flex-md-row">
-              <div class="col-md-8">
-                <ul class="list-group">
-                  <li class="list-group-item"><strong>Fecha 2 </strong></li>
-                  <li class="list-group-item">Napoleon vs <strong>Especialista</strong></li>
-                  <li class="list-group-item"><strong>Garba</strong> vs Chicho <a href=https://youtu.be/K3FL6tDmpmE><i class="fa-brands fa-youtube"></i></a></li>
-                  <li class="list-group-item">Korova vs Rulothar </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </br>
-      <div class="col">
-        <div class="row flex-column flex-md-row">
-          <div class="col">
-            <div class="row flex-column flex-md-row">
-              <div class="col-md-8">
-                <ul class="list-group">
-                  <li class="list-group-item"><strong>Fecha 3 </strong></li>
-                  <li class="list-group-item">Korova vs Chicho </li>
-                  <li class="list-group-item">Garba vs Napoleon </li>
-                  <li class="list-group-item">Rulothar vs Especialista </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </br>
-      <div class="col">
-        <div class="row flex-column flex-md-row">
-          <div class="col">
-            <div class="row flex-column flex-md-row">
-              <div class="col-md-8">
-                <ul class="list-group">
-                  <li class="list-group-item"><strong>Fecha 4 </strong></li>
-                  <li class="list-group-item">Chicho vs Rulothar </li>
-                  <li class="list-group-item">Garba vs Especialista </li>
-                  <li class="list-group-item">Korova vs Napoleon </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </br>
-      <div class="col">
-        <div class="row flex-column flex-md-row">
-          <div class="col">
-            <div class="row flex-column flex-md-row">
-              <div class="col-md-8">
-                <ul class="list-group">
-                  <li class="list-group-item"><strong>Fecha 5 </strong></li>
-                  <li class="list-group-item">Napoleon vs Chicho </li>
-                  <li class="list-group-item">Korova vs Especialista </li>
-                  <li class="list-group-item">Rulothar vs Garba </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </br>
-    </div>
       <%- include('./partials/footer') %>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
